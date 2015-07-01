@@ -1,5 +1,8 @@
 package com.company.arrays.strings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArraysAndStrins {
 
 	public boolean tellIfUnique(final String val) {
@@ -62,6 +65,7 @@ public class ArraysAndStrins {
 			temp = temp + str.charAt(0) + String.valueOf(count);
 
 			str = str.substring(count);
+			System.out.println();
 		}
 
 		if (originalString.length() * 2 == temp.length())
