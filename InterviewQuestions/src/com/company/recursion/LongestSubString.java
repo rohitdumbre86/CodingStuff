@@ -1,4 +1,4 @@
-package com.company.arrays.strings;
+package com.company.recursion;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,24 +27,21 @@ public class LongestSubString {
 				count = 1;
 				temp = "";
 			}
-			if(i==length-1)
-			{
+			if (i == length - 1) {
 				values.add(temp);
 			}
 		}
-		List<List<String>> subsList = new ArrayList<List<String>>();		int maxValue = 2;
+		int maxValue = 2;
 		temp = "";
-		for(String s : values)
-		{
-			if(maxValue < s.length())
-			{
+		for (String s : values) {
+			if (maxValue < s.length()) {
 				maxValue = s.length();
 				temp = s;
-			}	
+			}
 		}
-		
+
 		System.out.println(temp);
-		
+
 	}
 
 	public static void main(String[] args) {

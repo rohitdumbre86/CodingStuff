@@ -16,7 +16,11 @@ public class StepsAnalyzer {
 			steps.pop();
 			return;
 		}
-
+		
+		StringBuilder are = new StringBuilder();
+		are.append("are");
+        String bs = are.reverse().toString();
+		
 		int step3 = numberOfSteps - 3;
 		int step2 = numberOfSteps - 2;
 		int step1 = numberOfSteps - 1;
