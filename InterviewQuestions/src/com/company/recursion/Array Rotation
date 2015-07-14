@@ -1,0 +1,22 @@
+ public int[] rotateArrayToRigth (int[] array, int start, int end, int numberOfTimes)
+    {
+        if (start == end)
+            return array;
+
+        int startRotation = 1;
+        while (startRotation <= numberOfTimes)
+        {
+
+            for (int i = start; i < end; i++)
+            {
+
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+
+            startRotation++;
+        }
+
+        return array;
+    }
